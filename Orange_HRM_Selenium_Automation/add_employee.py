@@ -47,7 +47,7 @@ class searching_employee:
                 confirm_password.send_keys("Cherith007")
                 submit_button = waits.until(EC.visibility_of_element_located((By.XPATH,"//button[@type='submit']")))
                 submit_button.click()
-                time.sleep(10)
+                # time.sleep(10)
 
 obj = searching_employee()
 obj.search()

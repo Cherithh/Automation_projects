@@ -32,7 +32,6 @@ class searching_employee:
 
              employee_status = waits.until(EC.element_to_be_clickable((By.XPATH,"(//div[contains(@class,'oxd-select-text-input')])[1]")))
              employee_status.click()
-             time.sleep(2)
              waits.until(EC.visibility_of_element_located((By.XPATH,"//div[@role='listbox']")))
              employee_status.send_keys(Keys.ARROW_DOWN)
              employee_status.send_keys(Keys.ARROW_DOWN)
@@ -62,7 +61,7 @@ class searching_employee:
              sub_unit.send_keys(Keys.ENTER)
 
              driver.find_element(By.XPATH,"//button[normalize-space()='Search']").click()
-             time.sleep(10)
+            #  time.sleep(10)
 
 
 obj1 = searching_employee()
